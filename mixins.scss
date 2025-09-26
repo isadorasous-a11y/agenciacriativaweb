@@ -1,0 +1,18 @@
+// Mixin para centralizar com flex
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// Mixin para botão básico
+@mixin botao($cor-fundo, $cor-texto) {
+  background-color: $cor-fundo;
+  color: $cor-texto;
+  padding: variaveis.$espacamento-base / 2 variaveis.$espacamento-base;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

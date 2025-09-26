@@ -1,0 +1,29 @@
+@use 'variaveis';
+@use 'mixins';
+
+// Botão
+.botao {
+  @include mixins.botao(variaveis.$cor-primaria, white);
+
+  &--secundario {
+    @include mixins.botao(variaveis.$cor-secundaria, white);
+  }
+}
+
+// Card
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: variaveis.$espacamento-base;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: variaveis.$espacamento-base;
+
+  &__titulo {
+    font-size: 1.2rem;
+    margin-bottom: variaveis.$espacamento-base / 2;
+  }
+
+  &__texto {
+    font-size: 1rem;
+  }
+}

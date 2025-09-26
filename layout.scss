@@ -1,0 +1,38 @@
+@use 'variaveis';
+@use 'mixins';
+
+.header {
+  @include mixins.flex-center(space-between);
+  background-color: variaveis.$cor-primaria;
+  padding: variaveis.$espacamento-base;
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__menu {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: variaveis.$espacamento-base;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: variaveis.$espacamento-base;
+  background: variaveis.$cor-secundaria;
+  color: white;
+}

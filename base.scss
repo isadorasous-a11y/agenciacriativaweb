@@ -1,0 +1,15 @@
+@use 'variaveis';
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variaveis.$fonte-principal;
+  color: variaveis.$cor-texto;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+}
